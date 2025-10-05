@@ -113,4 +113,4 @@ El frontend consume el backend desarrollado en NestJS disponible en:
 
 👤 Autor
 
-Sebastián Mendoza Desarrollador FullStack 💻 Proyecto Reto Técnico MR Recluta
+Sebastián Mendoza Desarrollador FullStack
