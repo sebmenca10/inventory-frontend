@@ -1,18 +1,18 @@
 import type { Config } from 'jest'
 
-
 const config: Config = {
+  preset: 'ts-jest',
   testEnvironment: 'jsdom',
-  setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
+  roots: ['<rootDir>/src'],
   moduleNameMapper: {
-    '^@/(.*)$': '<rootDir>/src/$1'
+    '^@/(.*)$': '<rootDir>/src/$1',
+    '^@/config/env$': '<rootDir>/src/__mocks__/config/env.ts',
   },
+  setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
   transform: {
-    '^.+\\.(t|j)sx?$': [
-      'ts-jest',
-      { tsconfig: '<rootDir>/tsconfig.json', useESM: true }
-    ]
+    '^.+\\.tsx?$': 'ts-jest',
   },
-  extensionsToTreatAsEsm: ['.ts', '.tsx']
+  testPathIgnorePatterns: ['/node_modules/', '/dist/'],
 }
+
 export default config

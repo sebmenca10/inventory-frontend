@@ -22,7 +22,7 @@
 | ⚙️ Validación de formularios | React Hook Form + Zod |
 | 🧱 UI | TailwindCSS + Lucide Icons + Sonner Toasts |
 | 🔍 Gráficas | Recharts |
-| 🧪 Pruebas | Jest + React Testing Library *(pendiente)* |
+| 🧪 Pruebas | Jest + React Testing Library |
 
 ---
 
@@ -60,12 +60,12 @@ src/
 
  🔐 Roles y accesos
 
- | Módulo    |    Admin    |     Operator    |      Viewer     |
-| --------- | :---------: | :-------------: | :-------------: |
-| Dashboard |      ✅      |        ✅        |        ✅        |
-| Productos |    ✅ CRUD   | 🔍 Solo lectura | 🔍 Solo lectura |
-| Usuarios  | ✅ Crear/Ver |        ❌        |        ❌        |
-| Auditoría |    ✅ Ver    |        ❌        |        ❌        |
+| Módulo    |    Admin     |     Operator     |      Viewer     |
+| --------- | :---------:  | :--------------: | :-------------: |
+| Dashboard |      ✅      |        ✅        |        ✅       |
+| Productos |    ✅ CRUD   | 🔍 Solo lectura  | 🔍 Solo lectura |
+| Usuarios  | ✅ Crear/Ver |        ❌        |        ❌       |
+| Auditoría |    ✅ Ver    |        ❌        |        ❌       |
 
 🧭 Navegación principal
 
@@ -79,6 +79,23 @@ src/
 
 /login → Inicio de sesión
 
+## 🧪 Pruebas unitarias
+
+Se utilizan **Jest** y **React Testing Library** con entorno JSDOM.
+
+```bash
+npm run test
+
+Pruebas implementadas:
+
+✅ Login.test.tsx: renderiza formulario y verifica elementos clave
+
+✅ ProductForm.test.tsx: valida campos obligatorios
+
+Para reporte de cobertura:
+
+npm run test:ci
+
 🧰 Scripts útiles
 
 | Comando           | Descripción                                 |
@@ -87,7 +104,7 @@ src/
 | `npm run build`   | Compila la app para producción              |
 | `npm run preview` | Previsualiza el build local                 |
 | `npm run lint`    | Ejecuta ESLint                              |
-| `npm run test`    | Ejecuta las pruebas unitarias *(pendiente)* |
+| `npm run test`    | Ejecuta las pruebas unitarias               |
 
 🌐 Backend relacionado
 
