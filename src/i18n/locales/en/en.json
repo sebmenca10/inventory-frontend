@@ -1,0 +1,25 @@
+{
+  "app": {
+    "title": "Inventory"
+  },
+  "auth": {
+    "login": "Sign in",
+    "logout": "Sign out"
+  },
+  "products": {
+    "title": "Products",
+    "name": "Name",
+    "category": "Category",
+    "price": "Price",
+    "stock": "Stock",
+    "create": "Create",
+    "edit": "Edit",
+    "delete": "Delete",
+    "import": "Import CSV",
+    "export": "Export CSV"
+  },
+  "errors": {
+    "required": "Required field",
+    "server": "Unexpected error. ID: {{id}}"
+  }
+}

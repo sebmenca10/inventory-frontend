@@ -1,0 +1,25 @@
+{
+  "app": {
+    "title": "Inventario"
+  },
+  "auth": {
+    "login": "Iniciar sesión",
+    "logout": "Cerrar sesión"
+  },
+  "products": {
+    "title": "Productos",
+    "name": "Nombre",
+    "category": "Categoría",
+    "price": "Precio",
+    "stock": "Stock",
+    "create": "Crear",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "import": "Importar CSV",
+    "export": "Exportar CSV"
+  },
+  "errors": {
+    "required": "Campo requerido",
+    "server": "Error inesperado. ID: {{id}}"
+  }
+}
